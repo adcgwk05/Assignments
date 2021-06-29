@@ -4,23 +4,34 @@ import java.util.*;
 import java.text.*;
 import java.math.*;
 import java.util.regex.*;
-public class Solution {
+import java.util.Scanner; 
+public class Main
 
-    public static void main(String[] args) 
-    {
-        int x=-123,rem=0,rev=0;
-        while(x!=0)
-            {
-            rem=x%10;
-            rev=rev*10+rem;
-            x/=10;
-            
-}
-        System.out.println(rev);
-}
+{
+
+public static void main(String[] args)
+
+{
+
+Scanner sc =new Scanner(System.in); 
+int rem=0, rev=0; while(x!=0)
+
+int x=sc.nextInt();
+
+{
+
+Int rem=x;rev=rev*10+rem;
+
+X/=10;
+
 }
 
-________________________________________________
+System.out.println(rev);
+
+}
+
+}
 Output:
 
 -321
+123
