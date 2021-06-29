@@ -1,0 +1,26 @@
+import java.io.*;
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+public class Solution {
+
+    public static void main(String[] args) 
+    {
+        int x=-123,rem=0,rev=0;
+        while(x!=0)
+            {
+            rem=x%10;
+            rev=rev*10+rem;
+            x/=10;
+            
+}
+        System.out.println(rev);
+}
+}
+
+________________________________________________
+Output:
+
+-321
