@@ -1,0 +1,25 @@
+
+class Solution {
+  public int subproandsum(int n) {
+    int sum = 0;
+    int copy = n;
+    while (copy > 0) {
+      sum += copy % 10;
+      copy /= 10;
+    }
+    int prod = 1;
+    copy = n;
+    while (copy > 0) {
+      prod *= copy % 10;
+      copy /= 10;
+    }
+    return prod - sum;
+  }
+}
+
+Your input
+234
+Your answer
+15
+Expected answer
+15
