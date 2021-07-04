@@ -10,9 +10,9 @@ for(k=1;k<=2;k++)
 
 { for(int i=start;i>=1 &&
 
-i<=10;i+=inc)
+i<=7;i+=inc)
 
-{ System.out.println('*');
+{ System.out.println("*");
 
 }
 
