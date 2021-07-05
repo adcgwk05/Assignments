@@ -1,0 +1,31 @@
+import java.util.Scanner; 
+class Main
+{ 
+  public static void main (String args[])
+  { 
+   Scanner scan=new Scanner(System.in); 
+   System.out.print("Enter the number of elements in an array: "); 
+   int n=scan.nextInt();
+   int arr[]=new int[n];
+   for(int i=0; i<n; i++)
+    { 
+     System.out.print("Enter the elements");
+     arr[i]=scan.nextInt();  
+    }
+      int min=arr[0];
+      for(int i=0; i<n; i++)
+      { 
+       if(min>arr[i])
+        {
+         min=arr[i];   
+        }    
+      } 
+       System.out.println("The minimum value is: "+min);
+    }  
+  }
+
+Output:
+Enter the number of elements in an array: 3
+Enter the elements 2 3 4
+The minimum value is:2
+
