@@ -1,25 +1,32 @@
-import java.util.*; 
-public class MySolution 
-{ 
-public static void main(String[] args)
- {
- Scanner sc=new Scanner(System.in);
- int i; 
-int n=sc.nextInt(); 
-int r=sc.nextInt();
- int ar[]=new int[n];
- int br[]=new int[n]; 
-for(i=0;i<n;i++)
- ar[i]=sc.nextInt();
- for(i=0;i<n;i++) 
+ import java.util.Arrays;
+ 
+class Main
 {
- if((i-r)<0)
- {
- br[n+i-r]=ar[i]; 
+   
+    public static void rightRotate(int[] A, int k)
+    {
+        int n = A.length;
+        int[] B = new int[k];
+        for (int i = 0; i < k; i++) {
+            B[i] = A[n - k + i];
+        }
+        for (int i = n - k - 1; i >= 0; i--) {
+            A[i + k] = A[i];
+        }
+        for (int i = 0; i < k; i++) {
+            A[i] = B[i];
+        }
+    }
+ 
+    public static void main(String[] args)
+    {
+        int[] A = { 1, 2, 3, 4, 5, 6, 7 };
+        int k = 3;
+ 
+        rightRotate(A, k);
+ 
+        System.out.println(Arrays.toString(A));
+    }
 }
- else br[i-r]=ar[i];
- } 
-for(i=0;i<n;i++) 
-System.out.print(br[i]+" ");
- }
- }
+Output:
+5 6 7 1 2 3 4
