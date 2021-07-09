@@ -1,0 +1,53 @@
+import java.util.*;  
+ class Arraysum 
+ {  
+  public static void main(String args[])
+   { 
+    Scanner sc = new Scanner(System.in);         int i,j,k,row,col,l=0; System.out.println("Enter the number of rows:"); row = sc.nextInt(); 
+    System.out.println("Enter the number of columns:");
+     col = sc.nextInt();  
+      int ar[][] = new int[row][col];      System.out.println("Enter the elements of the matrix") ;  
+          for(i=0;i<row;i++)   
+         {      
+      for(j=0;j<col;j++)    
+        {       
+         ar[i][j] = sc.nextInt(); 
+           } 
+      }    
+        System.out.println("The elements of the matrix") ;    
+        for(i=0;i<row;i++)      
+      {     
+       for(j=0;j<col;j++)  
+           {     
+          System.out.print(ar[i][j]+"\t");  
+           }      
+         System.out.println("");
+        }     
+         for(i=0;i<col;i++)
+         { 
+          l=0;   
+            for(j=0;j<row;j++)
+          { 
+           if(ar[j][i]>l)
+           l=ar[j][i];
+           }
+           System.out.println( "largest in "+(i+1)+ " coloumn:" + l);
+           }
+           } 
+           }
+
+0UTPUT:
+Enter the number of rows:2
+
+Enter the number of columns:2
+
+Enter the elements of the matrix
+
+The elements of the matrix
+1 2
+
+3 4
+
+largest 1 coloumn:3
+
+largest 2 coloumn:4
