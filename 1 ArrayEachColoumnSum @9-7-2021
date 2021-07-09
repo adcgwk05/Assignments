@@ -73,4 +73,18 @@ System.out.println( "sum of " +(i+1)+  "coloumn:" + sum);
 } 
 }
 
+Output:
+Enter the number of rows:2
 
+Enter the number of columns:2
+
+Enter the elements of the matrix
+
+The elements of the matrix
+1 2
+
+3 4
+
+sum of 1coloumn:4
+
+sum of 2coloumn:6
