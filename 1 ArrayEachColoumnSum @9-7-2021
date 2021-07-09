@@ -1,0 +1,76 @@
+import java.util.*;
+
+ 
+
+class Arraysum
+
+{  
+
+public static void main(String args[])
+
+{
+
+Scanner sc = new Scanner(System.in);
+
+        int i,j,k,row,col,sum=0;
+
+System.out.println("Enter the number of rows:");
+
+row = sc.nextInt();
+
+System.out.println("Enter the number of columns:");
+
+col = sc.nextInt();
+
+ 
+
+int ar[][] = new int[row][col];
+
+     System.out.println("Enter the elements of the matrix") ;
+
+     for(i=0;i<row;i++)
+
+     { 
+
+     for(j=0;j<col;j++)
+
+     { 
+
+         ar[i][j] = sc.nextInt();
+
+     }
+
+}
+
+     System.out.println("The elements of the matrix") ;
+
+     for(i=0;i<row;i++)
+
+     { 
+
+     for(j=0;j<col;j++)
+
+     { 
+
+       System.out.print(ar[i][j]+"\t");
+
+     }
+
+       System.out.println("");
+
+} 
+
+     for(i=0;i<col;i++)
+{
+	sum=0;
+     for(j=0;j<row;j++)
+{
+
+sum=sum+ar[j][i];
+}
+System.out.println( "sum of " +(i+1)+  "coloumn:" + sum);
+}
+} 
+}
+
+
