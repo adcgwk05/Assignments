@@ -1,0 +1,81 @@
+import java.util.*;   
+class Main
+ {  
+  public static void main(String args[])
+   { Scanner sc = new Scanner(System.in);      
+      int i,j,k,row,col,t=0; 
+   System.out.println("Enter the number of rows:"); 
+row = sc.nextInt(); 
+   System.out.println("Enter the number of columns:"); 
+   col = sc.nextInt(); 
+     int ar[][] = new int[row][col];  
+    System.out.println("Enter the elements of the matrix") ;    
+      for(i=0;i<row;i++) 
+         {
+   	      for(j=0;j<col;j++)    
+   	    {        
+   	     ar[i][j] = sc.nextInt();    
+   	    } 
+   	  }  
+   	      System.out.println("The elements of the matrix") ;    
+   	     for(i=0;i<row;i++)   
+   	      {  
+   	       for(j=0;j<col;j++)      
+   	        {     
+   	        System.out.print(ar[i][j]+"\t");
+   	         }
+   	           System.out.println("");
+   	        }
+   	        for(i=0;i<row;i++)   
+   	      {  
+   	       for(j=0;j<col;j++)  
+   	        {
+   	             for ( k = 0; k < row - j - 1; k++) 
+   	           { 
+
+                    if (ar[i][k] > ar[i][k + 1]) 
+                    {
+                      t =ar[i][k]; 
+
+                        ar[i][k] = ar[i][k + 1]; 
+
+                        ar[i][k + 1] = t;
+   	          	  
+   	           }  	
+   	          }
+               }   	            	          	  		   	          	  
+   	          	  System.out.println(ar[i][j]);
+   	          	  }
+   	          	  
+   	          	  System.out.println(" ");
+   	     } 
+  }
+
+Output:
+Enter the number of rows: 3
+
+Enter the number of columns: 3
+
+Enter the elements of the matrix
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+The elements of the matrix
+
+1 7 3
+
+8 5 6
+
+15 12 9
+
+1 3 7 
+5 6 8
+9 12 15   	          	   
+   	          	   
