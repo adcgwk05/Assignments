@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class TestClass 
+{
+
+     public static void main(String args[]) throws Exception { 
+
+     Scanner sc=new Scanner(System.in);
+
+      String st=sc.nextLine();
+
+      int i,sum=0,t,n;
+
+       String s="abcdefghijklmnopqrstuvwxyz";
+
+       char []ch=s.toCharArray();
+
+       char v[]={'a','e','i','o','u'};
+
+       n=s.length();
+
+       t=n-1;
+
+        for(i=0;i<t;i++)
+
+         {
+
+           if(st[i]==v[])
+
+            sum+=0;
+
+            else
+
+            sum+=i;
+
+          }
+
+           System.out.println("weight is:"+ sum);
+}
+
+}
+
+
