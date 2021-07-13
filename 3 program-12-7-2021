@@ -1,0 +1,30 @@
+public class Firstcaps
+{  
+public static void main(String [] args)
+{  
+
+    String s[]=str.split("my name is apoorva");  
+
+    String cap="";  
+
+    for(String i:s)
+{  
+
+        String f=s.substring(0,1);  
+
+        String afterf=s.substring(1);  
+
+        cap+=f.toUpperCase()+afterf+" ";  
+
+    }  
+
+    System.out.prinrln(cap);  
+
+}  
+
+}  
+
+
+Output:
+
+My Name Is Apoorva
