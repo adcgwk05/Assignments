@@ -1,7 +1,12 @@
 
-class factorial
+class A
 {
-
+Static void diaplay()
+{
+ Class test
+{
+ Void factorial()
+{
     static int factorial(int n) 
 
     { 
@@ -23,6 +28,9 @@ class factorial
         return fact; 
 
     } 
+}
+}
+}
 
     public static void main(String[] args) 
 
@@ -31,7 +39,8 @@ Scanner sc=new Scanner(Syatem.in);
 System.out.println("Enter number");
         int num = sc.nextInt(); 
 
-        System.out.println( "Factorial of " + num + " is " + factorial(num)); 
+        System.out.println( "Factorial of " + num + " is " + factorial(num));
+          display(); 
 
     } 
 } 
