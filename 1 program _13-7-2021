@@ -1,0 +1,57 @@
+import java.util.*;
+class Sample
+{
+static void primenumton(int N) 
+{ 
+
+    int i, j, flag; 
+
+    System.out.println("Prime numbers between 1 and "+ N + " are:"); 
+
+    for (i = 1; i <= N; i++) 
+
+    { 
+      
+
+        if (i == 1 || i == 0) 
+
+            continue; 
+ 
+
+        flag = 1; 
+ 
+
+        for (j = 2; j <= i / 2; ++j) 
+
+        { 
+
+            if (i % j == 0)
+
+            { 
+
+                flag = 0; 
+
+       }
+       }
+
+        if (flag == 1) 
+
+            System.out.print(i + " "); 
+
+    } 
+} 
+ 
+
+public static void main (String[] args) 
+{ 
+Scanner sc=new Scanner(System.in);
+    int N =sc.nextInt(); 
+ 
+
+    primenumton(N); 
+}
+}
+
+Output:
+Prime numbers between 1 and 15 are:
+2 3 5 7 11 13 
