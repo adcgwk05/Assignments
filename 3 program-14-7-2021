@@ -1,0 +1,35 @@
+import java.util.*;
+class Simple
+{
+static void Interest (float p,float t,float r)
+{
+float i=(p*t*r)/100;
+System.out.println("Simple interest is: " +i);
+}
+}
+class SimpleInterest
+{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+Simple s=new Simple();
+System.out.println("Enetr Principle amount");
+float p=sc.nextFloat();
+System.out.println("Enter time period in years");
+float t=sc.nextFloat();
+System.out.println("Enetr rate");
+float r=sc.nextFloat();
+s.Interest(p,t,r);
+}
+}
+output
+E:\>javac SimpleInterest.java
+E:\>java SimpleInterest
+Enetr Principle amount
+10000
+Enter time period in years
+2
+Enter rate
+5
+Simple Interest is
+100
