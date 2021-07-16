@@ -1,0 +1,26 @@
+import java.util.*; class Sample { public static void main(String [] args) 
+{ 
+ArrayList<Integer> ar=new ArrayList<Integer>();  
+ ar.add(10); 
+ ar.add(20); 
+ ar.add(30); 
+ ar.add(40); 
+ int index1=ar.indexOf(12);
+ int index2=ar.indexOf(10);
+ if(index1==-1)
+  System.out.println("Element not found"); 
+  else 
+  System.out.println("Element found");
+  if(index2==-1)
+  System.out.println("Element not found"); 
+  else 
+  System.out.println("Element found");
+  
+  
+  
+  }
+   }
+
+Output
+Element not found 
+Element found
