@@ -1,0 +1,25 @@
+class Solution {
+    public int[] sortArrayByParityII(int[] nums) {
+        int [] b=new int [nums.length];
+        int j=0,k=1;
+        for(int i=0;i<nums.length;i++)
+        {
+            if(nums[i]%2==0)
+            {
+                b[j]=nums[i];
+                j=j+2;
+            }
+            else
+            {
+                b[k]=nums[i];
+                k=k+2;
+            }
+        }
+        return b;
+     }
+}
+
+Your input
+[4,2,5,7]
+Your answer
+[4,5,2,7]
