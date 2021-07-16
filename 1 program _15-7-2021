@@ -1,0 +1,11 @@
+import java.util.*; 
+class Main
+ { 
+public static void main(String [] args)
+ { 
+ArrayList<Integer> ar=new ArrayList<Integer>(); ArrayList<Integer> br=new ArrayList<Integer>(); ar.add(10); ar.add(20); ar.add(30); ar.add(40); br.add(100); br.add(200); br.add(300); br.add(400); ar.addAll(br); System.out.println(ar);
+ } 
+}
+
+Output:
+[10, 20, 30, 40, 100, 200, 300, 400]
