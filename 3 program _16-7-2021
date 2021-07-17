@@ -1,0 +1,220 @@
+import java.util.*;
+
+ class Main
+ {
+      public static void main(String [] args) 
+{ 
+Scanner sc=new Scanner(System.in);
+ArrayList<Integer> ar=new ArrayList<Integer>();
+System.out.println("enter array size");
+int size=sc.nextInt();
+System.out.println("enter array elements");
+for(int i=0;i<size;i++)
+ar.add(sc.nextInt());
+while(true)
+{
+    
+System.out.println("1.BeginInsert");
+System.out.println("2.EndInsert");
+System.out.println("3. Position Insert");
+System.out.println("4. Begin Delete");
+System.out.println("5. End Delete");
+System.out.println("6. Position Delete");
+System.out.println("7. Display");
+System.out.println("8. Exit");
+
+System.out.println("enter your choice");
+  int choice=sc.nextInt();
+  switch(choice)
+  {
+  case 1:
+  System.out.println("enter data" +" ");
+  int BeginInsert=sc.nextInt();
+  ar.add(0,BeginInsert);
+  System.out.println(ar);
+  break;
+  case 2:
+  System.out.println("enter data" +" ");
+  int EndInsert=sc.nextInt();
+  ar.add(size-1,EndInsert);
+  System.out.println(ar);
+  break;
+   case 3:
+  System.out.println("enter position to insert and then data" +" ");
+  int positionInsert=sc.nextInt();
+  int positiondataInsert=sc.nextInt();
+  ar.add(positionInsert,positiondataInsert);
+  System.out.println(ar);
+  break;
+  case 4:
+  System.out.println("enter data" +" ");
+  ar.remove(0);
+  break;
+  case 5:
+  System.out.println("enter data" +" ");
+  ar.remove(size-1);
+  System.out.println(ar);
+  break;
+  case 6:
+  System.out.println("enter position to delete and then data" +" ");
+  int positiondelete=sc.nextInt();
+ ar.remove(positiondelete);
+ System.out.println(ar);
+  break;
+  case 7:
+  System.out.println(ar);
+   break;
+   case 8:
+   System.out.println("progrqm will exit");
+   break;
+  }
+  }
+   }
+   }
+
+Output
+enter array size
+
+4
+
+enter array elements
+
+2 3 4 5
+
+1.BeginInsert
+
+2.EndInsert
+
+3. Position Insert
+
+4. Begin Delete
+
+5. End Delete
+
+6. Position Delete
+
+7. Display
+
+8. Exit
+
+enter your choice
+
+1
+
+enter data 
+
+6
+
+[6, 2, 3, 4, 5]
+
+1.BeginInsert
+
+2.EndInsert
+
+3. Position Insert
+
+4. Begin Delete
+
+5. End Delete
+
+6. Position Delete
+
+7. Display
+
+8. Exit
+
+enter your choice
+
+2
+
+enter data 
+
+3
+
+[6, 2, 3, 3, 4, 5]
+
+1.BeginInsert
+
+2.EndInsert
+
+3. Position Insert
+
+4. Begin Delete
+
+5. End Delete
+
+6. Position Delete
+
+7. Display
+
+8. Exit
+
+enter your choice
+
+6
+
+enter position to delete and then data 
+
+3 4
+
+[6, 2, 3, 4, 5]
+
+1.BeginInsert
+
+2.EndInsert
+
+3. Position Insert
+
+4. Begin Delete
+
+5. End Delete
+
+6. Position Delete
+
+7. Display
+
+8. Exit
+
+enter your choice
+
+enter data 
+
+1.BeginInsert
+
+2.EndInsert
+
+3. Position Insert
+
+4. Begin Delete
+
+5. End Delete
+
+6. Position Delete
+
+7. Display
+
+8. Exit
+
+enter your choice
+
+8
+
+progrqm will exit
+
+1.BeginInsert
+
+2.EndInsert
+
+3. Position Insert
+
+4. Begin Delete
+
+5. End Delete
+
+6. Position Delete
+
+7. Display
+
+8. Exit
+
+enter your choice
