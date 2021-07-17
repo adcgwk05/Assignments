@@ -1,0 +1,32 @@
+import java.util.*;
+ class Main
+ {
+      public static void main(String [] args) 
+{ 
+    Scanner sc=new Scanner(System.in);
+ArrayList<Integer> ar=new ArrayList<Integer>();
+System.out.println("enter n value");
+int n=sc.nextInt();
+System.out.println("Enter array elements");
+ for(int i=0;i<n;i++)
+ ar.add(sc.nextInt());
+if(ar.contains(22))
+System.out.println("element found");
+else
+ System.out.println("not found"); 
+ ar.set(ar.indexOf(22),99);
+ System.out.println(ar); 
+  
+  }
+   }
+
+Output
+enter n value
+4
+22 3 4 5
+element found
+[99,3,4,5]
+
+enter n values
+ 2 3 4 5
+element not found
