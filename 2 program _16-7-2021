@@ -1,0 +1,35 @@
+import java.util.*;
+ class Main
+ {
+      public static void main(String [] args) 
+{ 
+    Scanner sc=new Scanner(System.in);
+ArrayList<Integer> ar=new ArrayList<Integer>();
+System.out.println("enter n value");
+int n=sc.nextInt();
+System.out.println("Enter array elements");
+ for(int i=0;i<n;i++)
+ ar.add(sc.nextInt());
+if(ar.contains(20))
+{
+  ar.remove(ar.indexOf(20));
+}
+ else
+ {
+ System.out.println("element not found");
+}
+System.out.println(ar);
+  }
+   }
+
+Output
+enter n value
+4
+Enter array elements
+20 22 23 24
+[22,23,24]
+
+enter n value
+4
+1 2 3 4
+element not found
