@@ -1,6 +1,6 @@
 import java.util.Scanner; 
 import java.util.*;
-Import java.io*;
+import java.io*;
 class Test
 {
     
