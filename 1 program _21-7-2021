@@ -1,0 +1,47 @@
+import java.util.Scanner; 
+import java.util.*;
+class Test
+{
+    
+    public void Push(int array)
+    {
+        int l=array.length;
+        Stack st=new Stack();
+    Stack <Integer>st1= new Stack<Integer>();
+        for(int i=0; i<l; i++)   
+{  
+st1.push(i);
+}
+System.out.println("elements in stack" +st1);  
+    }
+}
+
+public class Main
+{  
+public static void main(String[] args)   
+{ 
+Test obj=new Test();
+int n;  
+Scanner sc=new Scanner(System.in);  
+System.out.print("Enter the n value ");  
+
+n=sc.nextInt();  
+  
+int[] array = new int[n];  
+System.out.println("Enter the array elements: ");  
+for(int i=0; i<n; i++)  
+{  
+array[i]=sc.nextInt();
+obj.Push(array[]);
+  
+} 
+}
+} 
+
+Output
+Enter the n value
+3
+Enter the array elements
+3 4 5
+elements in stack 
+3 4 5
