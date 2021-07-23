@@ -1,0 +1,69 @@
+class MyQueue
+{
+        Stack myQueue=new Stack();
+        Stack st=new Stack();
+        Stack stack=new Stack();
+        int peekval;    
+    / Initialize your data structure here. */
+    public MyQueue() 
+    {
+        
+    }
+    
+    / Push element x to the back of queue. */
+    public void push(int x)
+    {
+        myQueue.push(x);
+    }
+    
+    / Removes the element from in front of queue and returns that element. */
+    public int pop()
+    {
+        while(!myQueue.isEmpty())
+        st.push(myQueue.pop());
+        
+        Object x = st.pop();
+        while(!st.isEmpty()){
+            myQueue.push(st.pop());
+        }
+        return (int)x;
+    }
+    
+    / Get the front element. */
+    public int peek() 
+    {
+       //stack=myQueue.get();
+        //return stack.peek();
+        return 1;
+    }
+    
+    / Returns whether the queue is empty. */
+    public boolean empty() 
+    {
+        if(myQueue.isEmpty())
+            return true;
+        else 
+            return false;
+    }
+}
+
+/
+ * Your MyQueue object will be instantiated and called as such:
+ * MyQueue obj = new MyQueue();
+ * obj.push(x);
+ * int param_2 = obj.pop();
+ * int param_3 = obj.peek();
+ * boolean param_4 = obj.empty();
+ */
+
+Your input
+
+["MyQueue","push","push","peek","pop","empty"] [[],[1],[2],[],[],[]]
+
+Your answer
+
+[null,null,null,1,1,false]
+
+Expected answer
+
+[null,null,null,1,1,false]
