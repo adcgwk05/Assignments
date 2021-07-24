@@ -1,0 +1,34 @@
+import java.util.*; 
+public class Main 
+{ 
+    public static void main(String args[])
+    { 
+        Scanner sc=new Scanner(System.in); 
+        System.out.println("enter array size");
+        int n=sc.nextInt(); 
+        ArrayList a=new ArrayList(); 
+        System.out.println("enter array elements");
+        for(int i=0;i<n;i++) 
+        {
+          a.add(sc.nextInt()); 
+        } 
+            Iterator it=a.iterator(); 
+            while(it.hasNext())
+              { 
+                Integer i=(Integer)it.next();
+              } 
+            System.out.println(a);
+    }
+}
+
+Output
+
+enter array size
+
+3
+
+enter array elements
+
+3 4 5
+
+[3, 4, 5]
