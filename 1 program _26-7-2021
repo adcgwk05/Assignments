@@ -1,0 +1,45 @@
+class Solution {
+    public int trailingZeroes(int n) {
+        int count=0,fact=1;
+        
+     for(int i=n;i<=n;i--)
+         {
+         fact=fact*i;
+         }
+        if(fact%10==0)
+            
+        System.out.println("one trailing zero");                            else
+           System.out.println("no trailing zero");
+            
+        while(fact%10==0)
+    count++;
+    return count;
+        }
+}
+class Main
+    {
+    public static void main(String [] args)
+        {
+       Scanner sc=new Scanner(System.in);
+    Solution s=new Solution();
+        int n=sc.nextInt();
+    s.trailingZeroes(n);
+    }
+    }
+
+
+OutPut
+
+Run Code: Time Limit Exceeded
+
+×
+
+Run Code Result:
+
+Your input
+
+3
+
+Your stdout
+
+one trailing zero
