@@ -1,0 +1,41 @@
+class Solution 
+{
+    public int countPrimes(int n)       {
+        int count=0;
+    for(int i=0;i<n;i++)
+        {
+        for(int j=1;j<=i;j++)
+           {
+            if(i%j==0)
+             {
+         count++;
+             }
+            while(count==2)
+             {
+        }
+            }
+        }
+    return count;
+        
+    }
+}
+class Main
+    {
+    public static void main(String [] args)
+        {
+        Solution s=new Solution();
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        s.countPrimes(n);
+    }
+}
+
+Run Code: Time Limit Exceeded
+
+×
+
+Run Code Result:
+
+Your input
+
+10
