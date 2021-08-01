@@ -1,0 +1,49 @@
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+public class Main
+{
+
+    public static void main(String[] args)
+    {
+        Solution s=new Solution();
+        Scanner sc=new Scanner(System.in);
+
+        int n=sc.nextInt();
+        
+        s.Sieve(n);
+        }
+    }
+class Solution
+    {
+        public void Sieve(int n)
+            {
+            int i,j;
+            int count=0;
+                int prime[]=new int[n];
+            for(i=0;i<n;i++)
+                {
+                prime[i]=1;
+            for(i=n+1;i*i>0;i--)
+                {
+            if(prime[i]==1)
+                {
+                for(j=i*i;j<n;j+=i)
+                    {
+                    prime[i]=0;
+                     }
+                }
+                System.out.println(i);
+                break;
+                }
+            } 
+        }
+    }
+
+Output
+10
+11
+
+121
+127
