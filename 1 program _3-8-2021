@@ -1,0 +1,71 @@
+import java.util.*;
+class Main
+{
+
+static int fact(int N)
+{
+    int res;
+    if (N == 1 || N == 0)
+
+        return 1;
+
+    res=N * fact(N - 1);
+    return res;
+}
+
+static void prefixFactorialArray(int[] arr, int N)
+{
+ 
+
+    for(int i = 1; i < N; i++) 
+
+    {
+
+        arr[i] += arr[i - 1];
+
+    }
+    for(int i = 0; i < N; i++)
+
+    {
+
+        arr[i] = fact(arr[i]);
+
+    }
+
+    for(int i = 0; i < N; i++)
+
+    {
+
+        System.out.print(arr[i] + " ");
+
+    }
+}
+
+public static void main(String[] args)
+{
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter array range");
+    int N=sc.nextInt();
+    int[] arr =new int[N];
+    System.out.println("enter array elements");
+    for(int i=0;i<N;i++)
+    {
+    arr[i]=sc.nextInt();
+    }
+
+
+    prefixFactorialArray(arr, N);
+}
+}
+
+Output
+
+enter array range
+
+3
+
+enter array elements
+
+2 3 4
+
+2 120 362880
