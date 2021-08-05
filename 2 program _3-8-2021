@@ -1,0 +1,61 @@
+import java.util.*;
+class Main
+{
+    public static void main(String[] args)
+{
+    Scanner sc=new Scanner(System.in);
+    Test t=new Test();
+    System.out.println("enter array range");
+    int N=sc.nextInt();
+    int[] arr =new int[N];
+    System.out.println("enter A range");
+    int A=sc.nextInt();
+    System.out.println("enter B range");
+    int B=sc.nextInt();
+    System.out.println("enter L range");
+    int L=sc.nextInt();
+    System.out.println("enter R range");
+    int R=sc.nextInt();
+    System.out.println("enter array elements");
+    for(int i=0;i<N;i++)
+    {
+    arr[i]=sc.nextInt();
+    }
+    t.arraysums(arr,N,A,B,L,R);
+    }
+}
+    class Test
+    {
+        public void arraysums(int arr[],int N,int A,int B,int L,int R)
+        {
+        int sum=0,sum1=0;
+        for(int i=L;i<=R;i++)
+        {
+            sum+=arr[i];
+        }
+        System.out.println(sum +"is sum of elements from L to R");
+        for(int i=arr[A];i<=arr[B];i++)
+        {
+            arr[i]=arr[i]+10;
+            sum1=sum1+arr[i];
+        }
+        System.out.println(sum1);
+        } 
+    }
+
+Output
+enter array range
+6
+enter A range
+1
+enter B range
+3
+enter L range
+3 
+enter R range
+5
+enter array elements
+1 3 5 7 9 11
+
+27
+15
