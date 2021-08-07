@@ -1,0 +1,68 @@
+import java.util.*; 
+
+
+
+class Main
+{ 
+
+
+static int findMax(int n, int a[], 
+
+int b[], int k[], int m) 
+
+{
+
+int[] arr = new int[n]; 
+
+for(int i = 0; i < m; i++) 
+
+{ 
+
+int low = a[i]; 
+
+int high = b[i]; 
+
+for(int j = low; j <= high; j++) 
+
+arr[j] += k[i]; 
+
+} 
+
+
+
+int res = Integer.MIN_VALUE; 
+int max=arr[0];
+for(int i = 0; i < n; i++) 
+if(arr[i]>max)
+max=arr[i];
+res = max; 
+return res; 
+
+}
+
+public static void main (String[] args) 
+
+{
+    Scanner sc=new Scanner(System.in)
+;int n=5;
+System.out.println("enter m value");
+int m = sc.nextInt(); 
+int a[]=new int[m];
+int b[]=new int[m];
+System.out.println("enter A elements");
+for(int i=0;i<m;i++)
+{
+a[i] =sc.nextInt(); 
+}
+System.out.println("enter b elemwnts");
+for(int i=0;i<m;i++)
+{
+ b[i] = sc.nextInt(); 
+}
+int k[]={ 100,100,100}; 
+
+System.out.println("Maximum value "+ findMax(n, a, b, k, m)); 
+
+}
+
+}
