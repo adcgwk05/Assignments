@@ -1,0 +1,38 @@
+import java.util.*;
+class Solution
+{
+    public boolean isPowerOfTwo(int n) 
+    {
+        if(n<=0)
+            return false;
+        else if((n&(n-1))==0)
+            return true;
+            else 
+                return false;
+        }
+    }
+class Main
+    {
+        public static void main(String[] args)
+            {
+            Scanner sc=new Scanner(System.in);
+            Solution s=new Solution();
+            int n=sc.nextInt();
+            s.isPowerOfTwo(n);
+        }
+    }
+
+Output
+Your input
+
+1
+
+Your answer
+
+true
+
+Expected answer
+
+true
+
+//submission result is accepted sir/mam
