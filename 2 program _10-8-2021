@@ -1,0 +1,78 @@
+import java.util.*;
+class InsertionSort
+{ 
+
+void sort(int arr[]) 
+
+{ 
+
+int n = arr.length; 
+for (int i = 1; i < n; ++i) { 
+
+int key = arr[i]; 
+
+int j = i - 1; 
+
+while (j >= 0 && arr[j] > key) { 
+
+arr[j + 1] = arr[j]; 
+
+j = j - 1; 
+
+} 
+
+arr[j + 1] = key; 
+
+} 
+
+} 
+static void printArray(int arr[]) 
+
+{ 
+
+int n = arr.length; 
+
+for (int i = 0; i < n; ++i) 
+
+System.out.print(arr[i] + " "); 
+
+System.out.println(); 
+
+}
+}
+class Main
+{
+public static void main(String args[]) 
+
+{ 
+Scanner sc=new Scanner(System.in);
+System.out.println("enter array range");
+int n=sc.nextInt();
+InsertionSort I= new InsertionSort(); 
+
+int arr[] =new int[n]; 
+System.out.println("enter array elements");
+for(int i=0;i<n;i++)
+{
+arr[i]=sc.nextInt();
+}
+I.sort(arr); 
+System.out.println("Sorted array"); 
+
+I.printArray(arr); 
+}
+}
+
+
+Output
+enter array range
+
+6
+
+enter array elements
+
+36 13 96 38 64 99
+
+Sorted array
+
+13 36 38 64 96 99
