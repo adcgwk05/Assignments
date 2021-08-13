@@ -1,0 +1,43 @@
+import java.io.*;
+import java.util.*;
+ 
+
+class Test
+{
+
+    static int sumofdigit(int n)
+
+    { 
+
+        if (n == 0)
+
+            return 0;
+
+        return (n % 10 + sumofdigit(n / 10));
+
+    }
+}
+class Main
+{
+
+    public static void main(String args[])
+
+    {
+        Scanner sc=new Scanner(System.in);
+Test t=new Test();
+System.out.println("enter num");
+        int num =sc.nextInt();
+
+        int result = t.sumofdigit(num);
+
+        System.out.println("Sum is " + result);
+
+    }
+}
+
+Output
+enter num
+
+1234
+
+Sum is 10
