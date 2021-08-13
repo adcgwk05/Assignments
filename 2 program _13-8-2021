@@ -1,0 +1,60 @@
+import java.util.*;
+ class  Test
+{
+ 
+
+    static boolean isPrime(int n, int i)
+
+    {
+
+
+        if (n <= 2)
+
+            
+            if(n == 2) 
+            return true;
+            else
+            return false;
+
+        if (n % i == 0)
+
+            return false;
+
+        if (i * i > n)
+
+            return true;
+
+        return isPrime(n, i + 1);
+
+    }
+}
+class Main
+{
+    public static void main(String[] args)
+
+    {
+ 
+Scanner sc=new Scanner(System.in);
+Test t=new Test();
+System.out.println("enter n value");
+        int n = sc.nextInt();
+ 
+
+        if (t.isPrime(n, 2)) 
+
+            System.out.println("Yes");
+
+        else
+
+            System.out.println("No");
+
+    }
+}
+
+Output
+
+enter n value
+
+4
+
+No
